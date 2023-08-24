@@ -336,27 +336,30 @@ footer {
   background: var(--main-color);
   border-radius: 5px;
   text-align: left;
-  h3 {
-      margin: 0;
-      padding: 0;
-      font-family: 'Open Sans';
-      color: var(--main-color);
-      font-size: 25px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-  }
-  form {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      margin: 0 auto;
-      max-width: 880px;
-      height: 450px;
-      background: var(--main-color);
-      text-align: left;
-      padding: 10px 0;
-      }
 }
+
+.contact-section h3 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+  color: var(--main-color);
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 880px;
+  height: 450px;
+  background: var(--main-color);
+  text-align: left;
+  padding: 10px 0;
+}
+
 
 label {display:block;}
 textarea { display:block;}
