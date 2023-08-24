@@ -1,0 +1,32 @@
+[
+    {
+        "name": "md-gen",
+        "url": "http://github.com/stanjosh/md-gen",
+        "description": "A simple markdown generator",
+        "image": "https://raw.githubusercontent.com/stanjosh/md-gen/main/assets/fullscreenshot.png"
+    },
+    {
+        "name": "tropicks.lol",
+        "url": "https://tropicks.lol",
+        "description": "A link page for my gaming ego",
+        "image": "https://raw.githubusercontent.com/stanjosh/tropicks.lol/main/assets/images/bgerf.png"
+    },
+    {
+        "name": "robot rock paper scissors",
+        "url": "https://stanjosh.github.io/robot-rps/",
+        "description": "Rock paper scissors game against a robot using two APIs",
+        "image": "https://raw.githubusercontent.com/stanjosh/robot-rps/main/assets/images/screenshot1.png"
+    },
+    {
+        "name": "LOOM",
+        "url": "https://loom-story-633054131188.herokuapp.com/",
+        "description": "stylized choose your own adventure app",
+        "image": "https://raw.githubusercontent.com/julianlosak/Loom/main/images/FirstPrompt.png"
+    },
+    {
+        "name": "urban survivor",
+        "url": "https://github.com/stanjosh/urban_survivor",
+        "description": "first python project, using pygame library",
+        "image": "/assets/images/repo/urbansurvivor.png"
+    }
+]
