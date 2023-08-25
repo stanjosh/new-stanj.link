@@ -5,7 +5,6 @@ const path = require('path')
 const app = express();
 const { sendEmail, validateEmail } = require('./util/emailer')
 const rateLimiter = require('express-rate-limit')
-
 const limiter = rateLimiter({
   max: 10,
   windowMS: 1000 * 60 * 10,
@@ -31,6 +30,10 @@ app.post('/email', limiter, (req, res) => {
     return res.status(400).send('Email address is invalid.')
   }
 
+})
+
+app.get('/', (req, res) => {
+  res.sendFile('index.html', { root: '.' })
 })
 
 ViteExpress.listen(app, 3000, () =>
