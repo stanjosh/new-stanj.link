@@ -4,10 +4,10 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/main",
-  root: "./src/client/",
+  base: "/",
+  root: "./",
   build: {
-    outDir: "public/main/",
+    outDir: "public/",
     assetsDir: "assets/",
   },
 });
