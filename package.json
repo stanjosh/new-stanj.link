@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "nodemon src/server/main.js -w src/server",
-    "start": "NODE_ENV=production node src/server/main.js",
+    "start": "node src/server/main.js",
     "build": "vite build"
   },
   "dependencies": {
@@ -15,8 +15,7 @@
     "nodemailer": "^6.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0",
-    "vite-express": "*"
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

@@ -1,6 +1,5 @@
 const express = require("express");
 require('dotenv').config()
-const ViteExpress = require("vite-express");
 const path = require('path')
 const app = express();
 const { sendEmail, validateEmail } = require('./util/emailer')
@@ -33,9 +32,9 @@ app.post('/email', limiter, (req, res) => {
 })
 
 app.get('/', (req, res) => {
-  res.sendFile('index.html', { root: '.' })
+  res.sendFile('index.html', { root: path.join(__dirname, '../client/public/main/') })
 })
 
-ViteExpress.listen(app, 3000, () =>
-  console.log("Server is listening on port 3000...")
-);
+app.listen(process.env.PORT || 3005, () => {
+  console.log("Server is running on port 3005");
+});

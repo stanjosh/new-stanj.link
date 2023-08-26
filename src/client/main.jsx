@@ -7,13 +7,6 @@ import Projects from './components/Projects.component.jsx'
 import Contact from './components/Contact.component.jsx'
 import ErrorPage from './components/error-page.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-// import sendEmail from "./util/emailer";
-
-
-
-// const getEmail = (name, email, subject, message) => {
-//   return sendEmail(name, email, subject, message)
-// }
 
 
 const router = createBrowserRouter([
