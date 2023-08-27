@@ -36,7 +36,8 @@ const sendEmail = async (email, name, subject, message) => {
           throw new Error(err)
         }
         else {
-          return true
+          console.log(info.messageId, info.response)
+          return info.response
         }
       }) 
     } else {

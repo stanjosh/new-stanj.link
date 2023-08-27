@@ -15,9 +15,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, './src/client/public')));
 
-app.post('/email', limiter, (req, res) => {
+app.post('/email', limiter, async (req, res) => {
   if (validateEmail(req.body.email)) {
-    sendEmail(req.body.email, req.body.name, req.body.subject, req.body.message)
+    await sendEmail(req.body.email, req.body.name, req.body.subject, req.body.message)
     .catch((err) => {
       console.log(err)
       return res.status(400).send(err.message)
@@ -31,7 +31,7 @@ app.post('/email', limiter, (req, res) => {
 
 })
 
-app.get('/', (req, res) => {
+app.use('/*', (req, res) => {
   res.sendFile('index.html', { root: path.join(__dirname, './src/client/public/pages/') })
 })
 
