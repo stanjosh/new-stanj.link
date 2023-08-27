@@ -13,7 +13,7 @@ const limiter = rateLimiter({
 app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, '../client/public')));
+app.use(express.static(path.join(__dirname, './src/client/public')));
 
 app.post('/email', limiter, (req, res) => {
   if (validateEmail(req.body.email)) {
@@ -32,7 +32,7 @@ app.post('/email', limiter, (req, res) => {
 })
 
 app.get('/', (req, res) => {
-  res.sendFile('index.html', { root: path.join(__dirname, '../client/public/main/') })
+  res.sendFile('index.html', { root: path.join(__dirname, './src/client/public/pages/') })
 })
 
 app.listen(process.env.PORT || 3005, () => {

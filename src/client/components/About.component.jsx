@@ -10,7 +10,7 @@ const About = () => {
           
           
           <div className="textBoxBorder">
-            <div className="photo" style={{ backgroundImage: "url(/assets/images/josh.jpg)" }} />
+            <div className="photo" style={{ backgroundImage: "url(/images/josh.jpg)" }} />
             <div>
               <p>
               Tech enthusiast motivated by solving problems for developers, 
