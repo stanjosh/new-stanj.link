@@ -10,4 +10,5 @@ export default defineConfig({
     outDir: "src/client/public/pages/",
     assetsDir: "assets/",
   },
+  
 });
