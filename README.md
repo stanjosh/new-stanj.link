@@ -9,7 +9,7 @@ It uses express to handle the static routing and react for the portfolio single-
 
 I intend to add a blog to it shortly.
 
-![project page](./public/screenshots/projects.png)
+![project page](./src/client/public/screenshots/projects.png)
 the home page shows all blog posts and comments
 
 the blog post modal
